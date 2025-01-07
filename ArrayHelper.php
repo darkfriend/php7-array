@@ -6,7 +6,7 @@ namespace darkfriend\helpers;
  * Class ArrayHelper
  * @package darkfriend\devhelpers
  * @author darkfriend <hi@darkfriend.ru>
- * @version 1.0.3
+ * @version 1.0.5
  */
 class ArrayHelper
 {
