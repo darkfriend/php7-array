@@ -113,18 +113,15 @@ class ArrayHelper
     {
         if(!$source || !$keys) return $source;
 
-        return \array_filter($source,function($key) use ($keys, $negative) {
-            if(\in_array($key,$keys)) {
-                if($negative) {
+        return \array_filter($source, function($key) use ($keys, $negative) {
+            if (\in_array($key, $keys)) {
+                if ($negative) {
                     return true;
                 }
                 return false;
             }
-            if($negative) {
-                return false;
-            }
             return true;
-        },\ARRAY_FILTER_USE_KEY);
+        }, \ARRAY_FILTER_USE_KEY);
     }
 
     /**
