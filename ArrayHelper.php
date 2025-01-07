@@ -120,6 +120,9 @@ class ArrayHelper
                 }
                 return false;
             }
+            if ($negative) {
+                return false;
+            }
             return true;
         }, \ARRAY_FILTER_USE_KEY);
     }
